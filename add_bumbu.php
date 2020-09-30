@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
-include dirname(dirname(__FILE__)).'/maktam_api_new/db/Db.class.php';
+include dirname(dirname(__FILE__)).'/casu_api/db/Db.class.php';
 $db = new Db();
 $bumbu = isset($_POST['bumbu']) ? $_POST['bumbu'] : '';
 
