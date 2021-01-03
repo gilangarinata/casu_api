@@ -7,8 +7,6 @@ $tanggal2 = date('d/m/Y');
 //  $tanggal = "05/04/2020";
 //  $tanggal2 = "05/06/2020";
  
- 
-
 $tomorrow = date('d/m/Y', strtotime($tanggal .' +1 day'));
 $sisa=0;
 $stock=0;
@@ -32,7 +30,7 @@ $stock=0;
 
          echo $tanggal;
  if($avail==false){
-     if($sisa=='[]'){
+     if($sisa==='[]'){
          echo 'sisa []';
         $sql = "INSERT INTO `maktam_stock` (`id`, `stock`, `sisa`, `date`) VALUES (NULL, '$stock', '[]', '$tomorrow');";
         $result = mysqli_query($conn,$sql);
